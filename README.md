@@ -15,3 +15,4 @@ Abrir `index.html` en el navegador o utilizar Live Server.
 ## Integrante
 
 Martin Lara
+Proyecto académico de Desarrollo FullStack II.
