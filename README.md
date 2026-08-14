@@ -12,6 +12,12 @@ Proyecto incremental de la asignatura Desarrollo FullStack II.
 
 Abrir `index.html` en el navegador o utilizar Live Server.
 
+## Fuentes de imágenes
+
+- `fotografia.jpg`: Pexels, fotografía urbana.
+- `huerto.jpg`: Pexels, imagen de huerto comunitario.
+- `programacion.jpg`: Pexels, imagen de programación/código.
+
 ## Integrante
 
 Martin Lara
