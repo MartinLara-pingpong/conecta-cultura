@@ -1,5 +1,5 @@
-const botonBienvenida = document.querySelector("#boton-bienvenida");
+const boton = document.getElementById("boton-bienvenida");
 
-botonBienvenida.addEventListener("click", () => {
-    alert("Durante el semestre construiremos Conecta Cultura paso a paso.");
+boton.addEventListener("click", function () {
+    alert("¡Bienvenido a Conecta Cultura! Pronto podrás participar en nuestras actividades.");
 });
