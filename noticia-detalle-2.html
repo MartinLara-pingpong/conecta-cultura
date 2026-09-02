@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jornada de huerto comunitario de Conecta Cultura">
+
+    <meta
+        name="description"
+        content="Jornada de huerto comunitario de Conecta Cultura"
+    >
+
     <title>Huerto comunitario | Conecta Cultura</title>
+
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 
 <body>
 
-    <a class="salto-contenido" href="#contenido-principal">
-        Ir al contenido
-    </a>
-
     <header class="cabecera-sitio">
-        <a class="marca" href="index.html">Conecta Cultura</a>
 
-        <nav aria-label="Navegación principal">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="agenda.html">Agenda</a></li>
-                <li><a href="participar.html">Participar</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
+        <a class="marca" href="index.html">
+            Conecta Cultura
+        </a>
+
+        <button
+            id="boton-menu"
+            class="boton-menu"
+            type="button"
+            aria-controls="menu-principal"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+        >
+            ☰
+        </button>
+
+        <nav
+            id="menu-principal"
+            class="menu"
+            aria-label="Navegación principal"
+        >
+            <ul>
+
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="noticias.html">Noticias</a>
+                </li>
+
+                <li>
+                    <a href="agenda.html">Agenda</a>
+                </li>
+
+                <li>
+                    <a href="participar.html">Participar</a>
+                </li>
+
+                <li>
+                    <a href="recursos.html">Recursos</a>
+                </li>
+
             </ul>
         </nav>
+
     </header>
 
     <main id="contenido-principal">
@@ -34,35 +75,50 @@
         <article class="noticia-completa">
 
             <header>
-                <p class="etiqueta">Comunidad y bienestar</p>
-                <h1>Jornada de huerto comunitario</h1>
+
+                <p class="etiqueta">
+                    Comunidad y bienestar
+                </p>
+
+                <h1>
+                    Jornada de huerto comunitario
+                </h1>
+
                 <p>
                     Publicado el
-                    <time datetime="2026-08-14">14 de agosto de 2026</time>
+                    <time datetime="2026-08-14">
+                        14 de agosto de 2026
+                    </time>
                 </p>
+
             </header>
 
             <figure>
+
                 <img
                     src="assets/img/huerto.jpg"
                     alt="Persona trabajando en un huerto comunitario"
                 >
+
                 <figcaption>
                     Jornada de trabajo y aprendizaje en el huerto comunitario.
                 </figcaption>
+
             </figure>
 
             <p>
-                Esta jornada busca reunir a vecinos interesados en aprender
-                técnicas básicas de cultivo y cuidado de espacios comunitarios.
+                Esta jornada reúne a vecinos interesados en aprender técnicas
+                básicas de cultivo y cuidado de espacios comunitarios.
             </p>
 
             <p>
-                La actividad también promueve el intercambio de conocimientos,
+                La actividad promueve el intercambio de conocimientos,
                 el trabajo colaborativo y prácticas responsables con el entorno.
             </p>
 
-            <h2>Información de la actividad</h2>
+            <h2>
+                Información de la actividad
+            </h2>
 
             <ul>
                 <li>Fecha: sábado 29 de agosto.</li>
@@ -71,7 +127,9 @@
             </ul>
 
             <p>
-                <a href="noticias.html">Volver a todas las noticias</a>
+                <a href="noticias.html">
+                    Volver a todas las noticias
+                </a>
             </p>
 
         </article>
@@ -79,7 +137,10 @@
     </main>
 
     <footer class="pie-sitio">
-        <p><strong>Conecta Cultura</strong></p>
+
+        <p>
+            <strong>Conecta Cultura</strong>
+        </p>
 
         <address>
             Contacto:
@@ -89,11 +150,15 @@
         </address>
 
         <p>
-            <small>Proyecto académico · Desarrollo FullStack II</small>
+            <small>
+                Proyecto académico · Desarrollo FullStack II
+            </small>
         </p>
+
     </footer>
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
 
 </body>
 </html>

@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulario de participación de Conecta Cultura">
+
+    <meta
+        name="description"
+        content="Formulario de participación de Conecta Cultura"
+    >
+
     <title>Participar | Conecta Cultura</title>
+
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 
 <body>
-
-    <a class="salto-contenido" href="#contenido-principal">
-        Ir al contenido
-    </a>
 
     <header class="cabecera-sitio">
 
@@ -20,15 +23,34 @@
             Conecta Cultura
         </a>
 
-        <nav aria-label="Navegación principal">
-            <ul class="menu">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="nosotros.html">Nosotros</a></li>
-    <li><a href="noticias.html">Noticias</a></li>
-    <li><a href="agenda.html">Agenda</a></li>
-    <li><a href="participar.html" aria-current="page">Participar</a></li>
-    <li><a href="recursos.html">Recursos</a></li>
-</ul>
+        <button
+            id="boton-menu"
+            class="boton-menu"
+            type="button"
+            aria-controls="menu-principal"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+        >
+            ☰
+        </button>
+
+        <nav
+            id="menu-principal"
+            class="menu"
+            aria-label="Navegación principal"
+        >
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li>
+                    <a href="participar.html" aria-current="page">
+                        Participar
+                    </a>
+                </li>
+                <li><a href="recursos.html">Recursos</a></li>
+            </ul>
         </nav>
 
     </header>
@@ -36,20 +58,36 @@
     <main id="contenido-principal">
 
         <header class="encabezado-pagina">
-            <p class="etiqueta">Súmate a la comunidad</p>
-            <h1>Formulario de participación</h1>
-            <p>Completa los datos para manifestar interés en una actividad.</p>
+
+            <p class="etiqueta">
+                Súmate a la comunidad
+            </p>
+
+            <h1>
+                Formulario de participación
+            </h1>
+
+            <p>
+                Completa los datos para manifestar interés en una actividad.
+            </p>
+
         </header>
 
-        <form class="formulario"
-              action="confirmacion.html"
-              method="get">
+        <form
+            class="formulario"
+            action="confirmacion.html"
+            method="get"
+        >
 
             <fieldset>
 
-                <legend>Datos de contacto</legend>
+                <legend>
+                    Datos de contacto
+                </legend>
 
-                <label for="nombre">Nombre completo</label>
+                <label for="nombre">
+                    Nombre completo
+                </label>
 
                 <input
                     id="nombre"
@@ -61,7 +99,9 @@
                     required
                 >
 
-                <label for="correo">Correo electrónico</label>
+                <label for="correo">
+                    Correo electrónico
+                </label>
 
                 <input
                     id="correo"
@@ -71,7 +111,9 @@
                     required
                 >
 
-                <label for="telefono">Teléfono chileno</label>
+                <label for="telefono">
+                    Teléfono chileno
+                </label>
 
                 <input
                     id="telefono"
@@ -88,7 +130,9 @@
 
             <fieldset>
 
-                <legend>Preferencias</legend>
+                <legend>
+                    Preferencias
+                </legend>
 
                 <label for="actividad">
                     Actividad de interés
@@ -99,7 +143,6 @@
                     name="actividad"
                     required
                 >
-
                     <option value="">
                         Selecciona una actividad
                     </option>
@@ -115,10 +158,11 @@
                     <option value="programacion">
                         Programación creativa
                     </option>
-
                 </select>
 
-                <p>Modalidad preferida</p>
+                <p>
+                    Modalidad preferida
+                </p>
 
                 <label>
                     <input
@@ -155,15 +199,12 @@
             </fieldset>
 
             <label>
-
                 <input
                     type="checkbox"
                     name="acepta_condiciones"
                     required
                 >
-
                 Confirmo que los datos son de prueba y acepto las condiciones.
-
             </label>
 
             <button type="submit">
@@ -176,7 +217,9 @@
 
     <footer class="pie-sitio">
 
-        <p><strong>Conecta Cultura</strong></p>
+        <p>
+            <strong>Conecta Cultura</strong>
+        </p>
 
         <address>
             Contacto:
@@ -186,12 +229,15 @@
         </address>
 
         <p>
-            <small>Proyecto académico · Desarrollo FullStack II</small>
+            <small>
+                Proyecto académico · Desarrollo FullStack II
+            </small>
         </p>
 
     </footer>
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
 
 </body>
 </html>

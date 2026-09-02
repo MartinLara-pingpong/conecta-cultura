@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Agenda de actividades de Conecta Cultura">
+
+    <meta
+        name="description"
+        content="Agenda de actividades de Conecta Cultura"
+    >
+
     <title>Agenda | Conecta Cultura</title>
+
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 
 <body>
-
-    <a class="salto-contenido" href="#contenido-principal">
-        Ir al contenido
-    </a>
 
     <header class="cabecera-sitio">
 
@@ -20,15 +23,30 @@
             Conecta Cultura
         </a>
 
-        <nav aria-label="Navegación principal">
-       <ul class="menu">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="nosotros.html">Nosotros</a></li>
-    <li><a href="noticias.html">Noticias</a></li>
-    <li><a href="agenda.html" aria-current="page">Agenda</a></li>
-    <li><a href="participar.html">Participar</a></li>
-    <li><a href="recursos.html">Recursos</a></li>
-</ul>
+        <button
+            id="boton-menu"
+            class="boton-menu"
+            type="button"
+            aria-controls="menu-principal"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+        >
+            ☰
+        </button>
+
+        <nav
+            id="menu-principal"
+            class="menu"
+            aria-label="Navegación principal"
+        >
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="participar.html">Participar</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+            </ul>
         </nav>
 
     </header>
@@ -36,18 +54,32 @@
     <main id="contenido-principal">
 
         <header class="encabezado-pagina">
-            <p class="etiqueta">Programación comunitaria</p>
-            <h1>Agenda de actividades</h1>
-            <p>Consulta las próximas experiencias de Conecta Cultura.</p>
+
+            <p class="etiqueta">
+                Programación comunitaria
+            </p>
+
+            <h1>
+                Agenda de actividades
+            </h1>
+
+            <p>
+                Consulta las próximas experiencias de Conecta Cultura.
+            </p>
+
         </header>
 
         <section aria-labelledby="titulo-agenda">
 
-            <h2 id="titulo-agenda">Próximas fechas</h2>
+            <h2 id="titulo-agenda">
+                Próximas fechas
+            </h2>
 
-            <div class="tabla-contenedor"
-                 tabindex="0"
-                 aria-label="Agenda desplazable horizontalmente">
+            <div
+                class="tabla-contenedor"
+                tabindex="0"
+                aria-label="Agenda desplazable horizontalmente"
+            >
 
                 <table>
 
@@ -56,6 +88,7 @@
                     </caption>
 
                     <thead>
+
                         <tr>
                             <th scope="col">Actividad</th>
                             <th scope="col">Fecha</th>
@@ -63,6 +96,7 @@
                             <th scope="col">Lugar</th>
                             <th scope="col">Cupos</th>
                         </tr>
+
                     </thead>
 
                     <tbody>
@@ -70,7 +104,9 @@
                         <tr>
                             <th scope="row">Fotografía urbana</th>
                             <td>
-                                <time datetime="2026-08-22">22 de agosto</time>
+                                <time datetime="2026-08-22">
+                                    22 de agosto
+                                </time>
                             </td>
                             <td>
                                 <time datetime="10:00">10:00</time>–13:00
@@ -82,7 +118,9 @@
                         <tr>
                             <th scope="row">Huerto comunitario</th>
                             <td>
-                                <time datetime="2026-08-29">29 de agosto</time>
+                                <time datetime="2026-08-29">
+                                    29 de agosto
+                                </time>
                             </td>
                             <td>
                                 <time datetime="09:30">09:30</time>–12:30
@@ -94,7 +132,9 @@
                         <tr>
                             <th scope="row">Programación creativa</th>
                             <td>
-                                <time datetime="2026-09-05">5 de septiembre</time>
+                                <time datetime="2026-09-05">
+                                    5 de septiembre
+                                </time>
                             </td>
                             <td>
                                 <time datetime="16:00">16:00</time>–18:00
@@ -125,12 +165,15 @@
         </address>
 
         <p>
-            <small>Proyecto académico · Desarrollo FullStack II</small>
+            <small>
+                Proyecto académico · Desarrollo FullStack II
+            </small>
         </p>
 
     </footer>
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
 
 </body>
-</html>
+</html> 

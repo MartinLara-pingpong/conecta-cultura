@@ -10,42 +10,36 @@
 
 <body>
 
-    <a class="salto-contenido" href="#contenido-principal">
-        Ir al contenido
-    </a>
-
     <header class="cabecera-sitio">
 
         <a class="marca" href="index.html">
             Conecta Cultura
         </a>
 
-        <nav aria-label="Navegación principal">
-            <ul class="menu">
-    <li>
-        <a href="index.html" aria-current="page">Inicio</a>
-    </li>
+        <button
+            id="boton-menu"
+            class="boton-menu"
+            type="button"
+            aria-controls="menu-principal"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+        >
+            ☰
+        </button>
 
-    <li>
-        <a href="nosotros.html">Nosotros</a>
-    </li>
-
-    <li>
-        <a href="noticias.html">Noticias</a>
-    </li>
-
-    <li>
-        <a href="agenda.html">Agenda</a>
-    </li>
-
-    <li>
-        <a href="participar.html">Participar</a>
-    </li>
-
-    <li>
-        <a href="recursos.html">Recursos</a>
-    </li>
-</ul>
+        <nav
+            id="menu-principal"
+            class="menu"
+            aria-label="Navegación principal"
+        >
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="participar.html">Participar</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+            </ul>
         </nav>
 
     </header>
@@ -53,10 +47,7 @@
     <main id="contenido-principal">
 
         <section class="presentacion">
-
-            <p class="etiqueta">
-                Aprendizaje y comunidad
-            </p>
+            <p class="etiqueta">Aprendizaje y comunidad</p>
 
             <h1>
                 Experiencias que conectan personas
@@ -69,91 +60,27 @@
             <a class="boton" href="noticias.html">
                 Explorar novedades
             </a>
-
         </section>
 
-        <section aria-labelledby="titulo-actividades">
+        <section aria-labelledby="titulo-cartelera">
 
-            <h2 id="titulo-actividades">
-                Actividades destacadas
-            </h2>
+            <h1 id="titulo-cartelera">
+                Agenda cultural
+            </h1>
 
-            <div class="grilla-tarjetas">
+            <div class="filtros">
+                <button id="mostrar-todas" type="button">
+                    Todas
+                </button>
 
-                <article class="tarjeta">
-
-                    <img
-                        src="assets/img/fotografia.jpg"
-                        alt="Participantes fotografiando edificios del barrio"
-                    >
-
-                    <h3>
-                        Fotografía urbana
-                    </h3>
-
-                    <p>
-                        Aprende composición mientras documentas tu entorno.
-                    </p>
-
-                    <a href="noticia-detalle-1.html">
-                        Conocer el taller
-                    </a>
-
-                </article>
-
-                <article class="tarjeta">
-
-                    <img
-                        src="assets/img/huerto.jpg"
-                        alt="Manos plantando una hierba en un huerto comunitario"
-                    >
-
-                    <h3>
-                        Huerto comunitario
-                    </h3>
-
-                    <p>
-                        Comparte técnicas de cultivo sustentable con tus vecinos.
-                    </p>
-
-                    <a href="noticia-detalle-2.html">
-                        Conocer la jornada
-                    </a>
-
-                </article>
-                <article class="tarjeta">
-
-    <img
-        src="assets/img/programacion.jpg"
-        alt="Persona trabajando con código en un computador durante una actividad de programación"
-    >
-
-    <h3>Programación para la comunidad</h3>
-
-    <p>
-        Aprende conceptos básicos de programación mediante ejercicios
-        prácticos y colaborativos.
-    </p>
-
-    <a href="noticias.html">Conocer la actividad</a>
-
-</article>
-
+                <button id="mostrar-disponibles" type="button">
+                    Con cupos
+                </button>
             </div>
 
+            <section id="cartelera" class="grilla-tarjetas"></section>
+
         </section>
-
-        <aside class="aviso" aria-labelledby="titulo-aviso">
-
-            <h2 id="titulo-aviso">
-                ¿Quieres proponer una actividad?
-            </h2>
-
-            <p>
-                Pronto habilitaremos un formulario para organizaciones locales.
-            </p>
-
-        </aside>
 
     </main>
 
@@ -179,6 +106,7 @@
     </footer>
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
 
 </body>
 </html>

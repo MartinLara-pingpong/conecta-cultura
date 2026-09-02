@@ -3,107 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conoce el propósito y la forma de participar en Conecta Cultura">
+    <meta name="description" content="Conoce Conecta Cultura y cómo participar">
     <title>Nosotros | Conecta Cultura</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 
 <body>
 
-    <a class="salto-contenido" href="#contenido-principal">
-        Ir al contenido
-    </a>
+<header class="cabecera-sitio">
 
-    <header class="cabecera-sitio">
+    <a class="marca" href="index.html">Conecta Cultura</a>
 
-        <a class="marca" href="index.html">
-            Conecta Cultura
-        </a>
+    <button
+        id="boton-menu"
+        class="boton-menu"
+        type="button"
+        aria-controls="menu-principal"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+    >
+        ☰
+    </button>
 
-        <nav aria-label="Navegación principal">
-            <ul class="menu">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="nosotros.html" aria-current="page">Nosotros</a>
-                </li>
-                <li>
-                    <a href="noticias.html">Noticias</a>
-                </li>
-                <li>
-                    <a href="agenda.html">Agenda</a>
-                </li>
-                <li>
-                    <a href="participar.html">Participar</a>
-                </li>
-                <li>
-                    <a href="recursos.html">Recursos</a>
-                </li>
-            </ul>
-        </nav>
+    <nav
+        id="menu-principal"
+        class="menu"
+        aria-label="Navegación principal"
+    >
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html" aria-current="page">Nosotros</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="participar.html">Participar</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+        </ul>
+    </nav>
 
+</header>
+
+<main id="contenido-principal">
+
+    <header class="encabezado-pagina">
+        <p class="etiqueta">Quiénes somos</p>
+        <h1>Una red para aprender en comunidad</h1>
+        <p>
+            Conectamos personas, organizaciones y espacios del territorio.
+        </p>
     </header>
 
-    <main id="contenido-principal">
-
-        <header class="encabezado-pagina">
-            <p class="etiqueta">Quiénes somos</p>
-            <h1>Una red para aprender en comunidad</h1>
-            <p>
-                Conectamos personas, organizaciones y espacios del territorio.
-            </p>
-        </header>
-
-        <section aria-labelledby="titulo-proposito">
-            <h2 id="titulo-proposito">Nuestro propósito</h2>
-            <p>
-                Facilitar el acceso a experiencias formativas cercanas,
-                inclusivas y colaborativas.
-            </p>
-        </section>
-
-        <section aria-labelledby="titulo-principios">
-            <h2 id="titulo-principios">Principios de trabajo</h2>
-            <ul>
-                <li>Participación abierta y respetuosa.</li>
-                <li>Aprendizaje práctico entre pares.</li>
-                <li>Cuidado de los espacios y recursos comunes.</li>
-            </ul>
-        </section>
-
-        <section aria-labelledby="titulo-participar">
-            <h2 id="titulo-participar">Cómo participar</h2>
-
-            <ol>
-                <li>Explora las actividades disponibles.</li>
-                <li>Elige una actividad que sea de tu interés.</li>
-                <li>Participa y comparte tu experiencia con la comunidad.</li>
-            </ol>
-        </section>
-
-    </main>
-
-    <footer class="pie-sitio">
-
+    <section>
+        <h2>Nuestro propósito</h2>
         <p>
-            <strong>Conecta Cultura</strong>
+            Facilitar el acceso a experiencias formativas cercanas,
+            inclusivas y colaborativas.
         </p>
+    </section>
 
-        <address>
-            Contacto:
-            <a href="mailto:hola@conectacultura.cl">
-                hola@conectacultura.cl
-            </a>
-        </address>
+    <section>
+        <h2>Principios de trabajo</h2>
+        <ul>
+            <li>Participación abierta y respetuosa.</li>
+            <li>Aprendizaje práctico entre pares.</li>
+            <li>Cuidado de los espacios y recursos comunes.</li>
+        </ul>
+    </section>
 
-        <p>
-            <small>Proyecto académico · Desarrollo FullStack II</small>
-        </p>
+    <section>
+        <h2>Cómo participar</h2>
 
-    </footer>
+        <ol>
+            <li>Explora las actividades disponibles.</li>
+            <li>Elige una actividad que sea de tu interés.</li>
+            <li>Participa y comparte tu experiencia.</li>
+        </ol>
+    </section>
 
-    <script src="assets/js/app.js"></script>
+</main>
+
+<footer class="pie-sitio">
+
+    <p><strong>Conecta Cultura</strong></p>
+
+    <address>
+        Contacto:
+        <a href="mailto:hola@conectacultura.cl">
+            hola@conectacultura.cl
+        </a>
+    </address>
+
+    <p>
+        <small>Proyecto académico · Desarrollo FullStack II</small>
+    </p>
+
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/menu.js"></script>
 
 </body>
 </html>
